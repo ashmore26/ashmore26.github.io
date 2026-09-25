@@ -852,8 +852,9 @@ a.article-title:hover {
 }
 .article-share-twitter,
 .article-share-facebook,
-.article-share-pinterest,
-.article-share-linkedin {
+.article-share-weibo,
+.article-share-weixin,
+.article-share-instagram {
   width: 50px;
   height: 36px;
   display: block;
@@ -864,8 +865,9 @@ a.article-title:hover {
 }
 .article-share-twitter .fa,
 .article-share-facebook .fa,
-.article-share-pinterest .fa,
-.article-share-linkedin .fa {
+.article-share-weibo .fa,
+.article-share-weixin .fa,
+.article-share-instagram .fa {
   font-size: 20px;
   width: 20px;
   height: 20px;
@@ -878,8 +880,9 @@ a.article-title:hover {
 }
 .article-share-twitter:hover,
 .article-share-facebook:hover,
-.article-share-pinterest:hover,
-.article-share-linkedin:hover {
+.article-share-weibo:hover,
+.article-share-weixin:hover,
+.article-share-instagram:hover {
   color: #fff;
 }
 .article-share-twitter:hover {
@@ -890,13 +893,17 @@ a.article-title:hover {
   background: #3b5998;
   text-shadow: 0 1px #2f477a;
 }
-.article-share-pinterest:hover {
-  background: #cb2027;
-  text-shadow: 0 1px #a21a1f;
+.article-share-weibo:hover {
+  background: #e6162d;
+  text-shadow: 0 1px #b81224;
 }
-.article-share-linkedin:hover {
-  background: #0077b5;
-  text-shadow: 0 1px #005f91;
+.article-share-weixin:hover {
+  background: #07c160;
+  text-shadow: 0 1px #069a4d;
+}
+.article-share-instagram:hover {
+  background: #c13584;
+  text-shadow: 0 1px #9a2a6a;
 }
 .article-gallery {
   background: #000;
