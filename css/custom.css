@@ -1,0 +1,67 @@
+/* 限制文章内图片最大宽度为 60% */
+.article-entry img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: 0;  /* 上下左右都没有边距，默认靠左，居中是auto */
+}
+/* 增加 description 和上方 subtitle 的距离（上间距） */
+.my-description {
+  margin-top: 0px; /* 你可以根据需要调整大小，比如 30px */
+  margin-left: 5px;
+color: #ffffff;
+font-weight: 700;
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+/* 增加 keyword 和上方 description 的距离（上间距） */
+.my-keywords {
+  margin-top: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+#header-title #logo {
+  font-size: 88px;        /* 标题大小，默认是 40px */
+  font-weight: 700 !important;     /* 强制加粗 */
+  color: #fdf7f7;         /* 标题颜色，默认白色 */
+}
+/* 强制文章详情页的标题左对齐 */
+.post-title, .article-title, .center-align {
+    text-align: left !important;
+}
+#subtitle {
+  font-size: 26px;        /* 副标题大小，默认是 16px */
+  color: #ffd800 !important;         /* 强制副标题颜色 */
+  margin-top: 5px;
+  font-weight: 700
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8); /* 加个阴影，让字在浅色背景上更清晰 */
+}
+
+/* 容器：设定网格布局 */
+.grid-container {
+  display: grid;
+  /* 强制分成3列 */
+  grid-template-columns: repeat(3,1fr);
+  /* 间距使用相对单位 0.5em，文字越大间距等比放大 */
+  gap: 0.5em !important;
+  /* 底部间距同样使用相对单位 */
+  margin-bottom: 0.3em !important;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.grid-item {
+  width: 100%;  /* 确保子元素撑满格子宽度 */
+  overflow: hidden;
+}
+/* 容器里的所有图片 */
+.article-entry .grid-item img {
+  width: 100% !important;          /* 自动填满格子 */
+  /* 高度也改成相对单位（比如 8em，约为 128px） */
+  aspect-ratio: 1/1 !important;         
+  object-fit: cover;    /* 完美裁剪不变形 */
+  transition: transform 0.3s ease; 
+  display: block;
+}
+
+.post-content .weibo-layout img:hover {
+  transform: scale(1);
+}
